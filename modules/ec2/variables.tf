@@ -23,7 +23,7 @@ variable "subnet_id" {
 variable "security_group_ids" {
   description = "List of security group IDs"
   type        = list(string)
-  
+
 }
 
 
@@ -39,13 +39,10 @@ variable "associate_public_ip" {
   default     = false
 }
 
+
 variable "user_data" {
   description = "User data script"
   type        = string
   default     = ""
 }
 
-variable "environment" {
-  description = "Environment name"
-  type        = string
-}
