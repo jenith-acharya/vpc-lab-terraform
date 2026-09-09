@@ -44,7 +44,7 @@ resource "aws_security_group" "private" {
 ingress {
     from_port        = -1
     to_port          = -1
-    protocol         = "imcp"
+    protocol         = "icmp"
     cidr_blocks      = [var.vpc_cidr]
     security_groups  = [aws_security_group.Bastion.id]
   }
