@@ -21,9 +21,9 @@ output "private_route_table_id" {
 
 
 output "nat_gateway_id" {
-  value = aws_nat_gateway.gw.id
+  value = aws_nat_gateway.nat.id
 }
 
 output "custom_network_acl_id" {
-  value = aws_network_acl.private.id
+  value = aws_network_acl.for_private.id
 }
