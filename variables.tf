@@ -34,6 +34,8 @@ variable "instance_type" {
   default     = "t2.micro"
 }
 
+
+
 variable "ami_id" {
   description = "AMI ID for Amazon Linux 2023"
   type        = string
@@ -45,8 +47,15 @@ variable "my_ip" {
   type        = string
 }
 
-variable "environment" {
-  description = "Environment name"
+
+variable "key_name" {
+  description = "Name of the key pair"
   type        = string
-  default     = "cafe-lab"
+  default     = "vockey"
+}
+
+variable "key_name_private" {
+  description = "Name of the key pair for private instance"
+  type        = string
+  default     = "vockey2"
 }
